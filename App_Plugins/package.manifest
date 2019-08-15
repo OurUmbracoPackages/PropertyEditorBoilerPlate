@@ -1,0 +1,36 @@
+{
+  propertyEditors:
+  [ 
+    {
+      alias: "Umbraco.Community.PropertyEditor.{{repository_name}}",
+      name: "{{repository_name | friendlyName}}",
+      icon: "icon-code",
+			group: "Rich Content",
+      editor:  
+      {
+        view: "~/App_Plugins/{{repository_name}}/{{repository_name}}.html"
+        
+      },
+      prevalues: {
+        fields:[          
+          {
+            label: "Preview",
+            description: "Example of a boolean pre value",
+            key: "preview",
+            view: "boolean"
+          },
+          {
+            label: "Default value",
+            description: "Example of a textarea",
+            key: "defaultValue",
+            view: "textarea"
+          }
+        ]
+      }
+    } 
+  ],
+  javascript:  
+  [
+    "~/App_Plugins/{{repository_name}}/{{repository_name}}.controller.js"
+  ]
+}
