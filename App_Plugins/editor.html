@@ -1,3 +1,9 @@
-<div ng-controller="Umbraco.Community.PropertyEditor.{{repository_name}}">
-	<textarea ng-model="model.value"></textarea>
+<div ng-controller="Umbraco.Community.PropertyEditor.{{repository_name}}" class="wmd-panel">
+	<div id="wmd-button-bar-{{model.alias}}"></div>
+
+		<textarea ng-model="model.value" class="wmd-input" id="wmd-input-{{model.alias}}">
+			your content
+		</textarea>
+
+	<div id="wmd-preview-{{model.alias}}" class="wmd-panel wmd-preview"></div>
 </div>
