@@ -3,7 +3,7 @@
   [ 
     {
       alias: "Umbraco.Community.PropertyEditor.{{repository_name}}",
-      name: "{{repository_name | friendlyName}}",
+      name: "{{repository_name | friendly_name}}",
       icon: "icon-code",
 			group: "Rich Content",
       editor:  
